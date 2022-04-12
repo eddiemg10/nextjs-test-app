@@ -24,9 +24,9 @@ export default NextAuth({
     maxAge: 60 * 60 * 24 * 30,
   },
   callbacks: {
-    async signIn({ user }) {
-      return user.email === "eddiemwiti10@gmail.com" ? true : false;
-    },
+    // async signIn({ user }) {
+    //   return user.email === "eddiemwiti10@gmail.com" ? true : false;
+    // },
 
     async session({ session, token, user }) {
       session.user.id = token.sub;
