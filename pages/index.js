@@ -26,6 +26,7 @@ export default function Home({ data }) {
         <a
           href="https://github.com/eddiemg10/nextjs-test-app"
           className="p-3 px-4 bg-red-400 rounded-md hover:shadow-md text-white text-md mt-10"
+          rel="noopener noreferrer"
           target="_blank"
         >
           Github repo
