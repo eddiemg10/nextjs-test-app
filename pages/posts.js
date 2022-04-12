@@ -4,7 +4,7 @@ import Head from "next/head";
 import { useSession, signIn } from "next-auth/react";
 import Post from "../components/Post";
 
-function posts() {
+function Posts() {
   const { data: session, status } = useSession();
 
   const [caption, setCaption] = useState("");
@@ -115,9 +115,9 @@ function posts() {
   );
 }
 
-export default posts;
+export default Posts;
 
-posts.getLayout = function PageLayout(page) {
+Posts.getLayout = function PageLayout(page) {
   return (
     <>
       <Navbar />

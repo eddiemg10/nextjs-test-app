@@ -4,7 +4,7 @@ import Comment from "../components/Comment";
 import Head from "next/head";
 import { useSession, getSession, signIn } from "next-auth/react";
 
-function comments() {
+function Comments() {
   const { data: session, status } = useSession();
   const [comment, setComment] = useState("");
   const [flag, setFlag] = useState(true);
@@ -115,9 +115,9 @@ function comments() {
   );
 }
 
-export default comments;
+export default Comments;
 
-comments.getLayout = function PageLayout(page) {
+Comments.getLayout = function PageLayout(page) {
   return (
     <>
       <Navbar />

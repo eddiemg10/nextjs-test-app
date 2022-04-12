@@ -12,10 +12,10 @@ function NotFound() {
     }, 3000);
   }, []);
   return (
-    <div className="bg-pink-200 text-3xl pt-20">
+    <div className=" text-3xl pt-20 text-center">
       <h1>Oops...</h1>
       <h2>Page not found</h2>
-      <p className="bg-red-400 p-5 rounded-xl mt-48">Go back</p>
+      <p className=" p-5 rounded-xl mt-48">Redirecting ...</p>
     </div>
   );
 }
