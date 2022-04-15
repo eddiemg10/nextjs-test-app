@@ -19,7 +19,17 @@ function Posts() {
       return data;
     }
     fetchPosts().then((data) => {
-      setPosts(data.reverse());
+      if (!data.error) {
+        setPosts(data.reverse());
+      } else {
+        setTimeout(() => {
+          fetchPosts().then((data) => {
+            if (!data.error) {
+              setPosts(data.reverse());
+            }
+          });
+        }, 8000);
+      }
     });
   }, [flag]);
 

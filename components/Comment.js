@@ -13,9 +13,9 @@ function Comment(props) {
           key={msg._id}
           className="bg-white text-xl w-[80%] p-3 rounded-xl shadow:md"
         >
-          <p className="pb-5 text-slate-500 flex font-thin">
+          <div className="pb-5 text-slate-500 flex font-thin">
             <User id={msg.user} /> <span className="pl-2">commented</span>
-          </p>
+          </div>
           <div className="flex">
             <div className="w-[10px] h-[40px] mr-3 bg-green-400"></div>
             <p className="text-2xl font-bold">{msg.comment}</p>

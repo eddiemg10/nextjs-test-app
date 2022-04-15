@@ -9,15 +9,15 @@ function Post(props) {
         <div key={post._id} className="w-[400px] p-5 bg-white shadow-xl">
           <img className="w-[400px] h-[400px] object-cover" src={post.image} />
 
-          <p className="pb-5 mt-10 text-slate-500">
+          <div className="pb-5 mt-10 text-slate-500">
             <User id={post.user} />
-          </p>
+          </div>
 
           {post.caption && (
-            <p className=" text-lg">
+            <div className=" text-lg">
               <span className="font-semibold pr-2">Commented </span>
               {post.caption}
-            </p>
+            </div>
           )}
         </div>
       ))}

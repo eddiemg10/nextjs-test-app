@@ -20,7 +20,7 @@ export default async function handler(req, res) {
     });
     try {
       await newPost.save();
-      res.status(201).json(newComment);
+      res.status(201).json(newPost);
     } catch (error) {
       console.log(error.errors);
       res.status(400).json({ success: false, error: error.errors });

@@ -16,7 +16,7 @@ export default function Home({ data }) {
         </h1>
         <ul className="list-disc mb-10 font-mono ml-20 mt-5">
           <li>SSR</li>
-          <li>Integration with mongodb %amp; mongoose</li>
+          <li>Integration with mongodb &amp; mongoose</li>
           <li>simple api routes</li>
           <li>Layouts</li>
           <li>next-auth with Github provider and JWT</li>

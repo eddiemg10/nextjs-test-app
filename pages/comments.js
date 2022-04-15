@@ -23,7 +23,17 @@ function Comments() {
       return data;
     }
     fetchComments().then((data) => {
-      setComments(data.reverse());
+      if (!data.error) {
+        setComments(data.reverse());
+      } else {
+        setTimeout(() => {
+          fetchComments().then((data) => {
+            if (!data.error) {
+              setComments(data.reverse());
+            }
+          });
+        }, 8000);
+      }
     });
   }, [flag]);
 
